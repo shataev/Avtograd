@@ -1,0 +1,403 @@
+.clearfix:before,
+.clearfix:after
+	content ""
+	display table
+
+
+.clearfix:after
+	clear both
+
+body
+	background-color #f0f0f0
+
+.wrapper
+	min-width 960px
+	min-height 100vh
+	position relative
+	width 100%
+	display flex
+	flex-direction column
+
+
+/*HEADER start*/
+
+.header
+	width 960px
+	margin 0 auto 30px
+	padding-top 23px
+
+.header-logo-phone
+	float left
+	width 270px
+	margin-right 60px
+
+.header-logo
+	float left
+	margin-right 15px
+
+.logo-link
+	text-decoration none
+	margin-bottom 10px
+	display inline-block
+
+.logo-text
+	font-size 14px
+	color #000000
+	margin-bottom 15px
+
+.logo-company-name
+	font-size 24px
+	color: #e93838
+	text-transform uppercase
+	font-weight: 700
+	letter-spacing -1px
+
+.header-phone
+	margin-left 92px
+	text-decoration none
+
+.phone-number
+	text-decoration none
+	color #000
+	font-weight 600
+	font-size 18px
+
+.header-nav-wrapper
+	position relative
+
+.header-nav-bg
+	background url("../../images/bg-header-nav.png") 0px 0px no-repeat
+	width 776px
+	height 98px
+	position absolute
+	z-index -1
+	right -50px
+	top -23px
+
+.header-nav
+	/*background url('../../images/bg-header-nav.png') 0px 0px no-repeat*/
+	list-style none
+	padding 24px 0 0
+	margin 0 0 40px
+	display flex
+	flex-direction row
+	justify-content: space-between
+	width 600px
+
+.header-nav-link
+	font-size 12px
+	font-weight bold
+	text-decoration none
+	color #fff
+	text-transform uppercase
+	&:hover
+		text-decoration underline
+
+
+.header-info
+	font-size 18px
+	font-style italic
+	line-height 18px
+	float right
+
+/*HEADER end*/
+
+
+/*CONTENT start*/
+
+.content-wrapper
+	width 960px
+	margin 0 auto 90px
+	flex 1
+
+	/*Slider*/
+
+.slider-wrapper
+	margin-bottom 30px
+
+#slider
+	position:relative
+	width  100%
+	height 240px
+	background url ("images/loading.gif") no-repeat 50% 50%
+
+#slider img
+	position absolute
+	top 0
+	left 0
+	display none
+
+#slider a
+	border 0
+	display block
+
+	/*Aside*/
+
+.aside
+	width 210px
+	/*background #fff*/
+	padding 20px 10px 20px 0
+	box-sizing border-box
+	background #fff
+	float left
+
+.aside-item
+	margin-bottom 55px
+
+.aside-item-content-wrapper
+	padding-left 30px
+	overflow hidden
+
+.aside-heading-wrapper
+	position relative
+	margin-bottom 30px
+
+.aside-heading
+	font-size 14px
+	font-family "Open Sans"
+	color rgb(255, 255, 255)
+	font-weight bold
+	text-transform uppercase
+	line-height 1.2
+	text-align left
+	margin 0px
+	position relative
+
+.aside-heading-bg
+	position absolute
+
+.bg-1
+	width 279px
+	height 68px
+	background url("../../images/bg-aside-1.png") no-repeat 0px 0px;
+	left -50px
+	top -14px
+
+.bg-2
+	width 297px
+	height 55px
+	background url("../../images/bg-aside-2.png") no-repeat 0px 0px;
+	left -62px
+	top -23px
+
+.bg-3
+	width 282px
+	height 67px
+	background url("../../images/bg-aside-3.png") no-repeat 0px 0px;
+	left -65px
+	top -25px
+
+.bg-map
+	width 315px
+	height 191px
+	background url("../../images/bg-aside-map.png") no-repeat 0px 0px;
+	left -57px
+	top -85px
+
+.vut-heading
+	display inline-block
+	font-size 14px
+	font-family "Open Sans"
+	color rgb(76, 76, 76)
+	font-weight bold
+	line-height 1.2
+	text-decoration none
+	margin-bottom 15px
+	&:hover
+		color #e93838
+	&.is-open
+		color #e93838
+
+.vut-1118
+	.vut-heading
+		margin-bottom 0
+
+.aside-item-heading-text
+	margin-right 18px
+	float left
+
+.drop-arrow
+	display: block;
+	width: 10px;
+	height: 10px;
+	float: left;
+	background: url("../../images/drop-down-arrow.svg") no-repeat 0px 0px;
+	background-size: 8px;
+	position: relative;
+	top: 5px;
+
+.vut-list,
+.metobr-list,
+.buy-in-reg-list
+	padding 0
+	margin 0
+	list-style none
+
+.vut-list-wrapper
+	display none
+
+.is-open
+	&+.vut-list-wrapper
+		display block
+	.drop-arrow
+		background url("../../images/drop-up-arrow.svg") no-repeat 0px 0px
+		background-size 8px
+
+.vut-list-item,
+.metobr-list-item
+.buy-in-reg-list-item
+	margin-bottom 15px
+
+.vut-link,
+.metobr-link,
+.buy-in-reg-link
+	font-size 12px
+	font-family "Open Sans"
+	color rgb(76, 76, 76)
+	line-height 1.2
+	text-decoration none
+	&:hover
+		color #e93838
+
+.metobr-link,
+.buy-in-reg-link
+	font-size 14px
+.all-cities
+	margin-top 75px
+
+.all-cities-link
+	display block
+	color #fff
+	position relative
+	left 30px
+	font-size 14px
+	font-family "Open Sans"
+	text-decoration none
+	background url(../../images/arrow-right.svg) no-repeat 84px 1px
+	background-size 15px auto
+
+//Main Content
+
+.main-section
+	margin-left 270px
+	width 660px
+
+.main-heading
+	line-height 1
+	margin 0 0 25px
+
+.about-info
+	margin-bottom 50px
+	padding-top 20px
+
+.about-info-text
+	line-height 18px
+	font-size 14px
+	font-family "Open Sans"
+	margin 0 0 25px
+
+	&:last-child
+		margin-bottom 0
+
+.advantages-slider
+	background #fff
+	padding 15px 15px 50px 30px
+	width 690px
+	position relative
+	left -30px
+	box-sizing border-box
+
+.slide-box-heading,
+.slide-box-text
+	font-size 14px
+	font-family "Open Sans"
+	color #000
+	line-height 20px
+
+.slide-box-heading
+	font-weight bold
+	margin 0
+
+.arrow-helper
+	width 0
+	height 0
+	transform rotateZ(0grad)
+	transform-origin center
+	position absolute
+	border 8px solid #f0f0f0
+	box-sizing border-box
+	border-right-color #fff
+	border-bottom-color #fff
+	left 14px
+	top -16px
+
+/*CONTENT end*/
+
+
+/*FOOTER start*/
+
+.footer
+	background #000
+
+.footer-wrapper
+	width 960px
+	margin 0 auto
+	padding 0 50px 25px
+	box-sizing border-box
+	position relative
+
+.footer-contacts
+	float left
+	width 270px
+	padding-top 20px
+
+.footer-phone,
+.footer-phone-link,
+.footer-adress,
+.footer-nav-item-link,
+.footer-copyright
+	font 12px/12px "Open Sans"
+	text-decoration none
+	color #9b9b9b
+
+.footer-phone-link,
+.footer-nav-item-link
+	&:hover
+		color #fff
+
+.footer-phone
+	margin-bottom 30px
+
+.footer-adress-text
+	margin 0 0 5px 0
+
+.footer-nav
+	float right
+	margin-top 75px
+
+.footer-nav-list
+	list-style none
+	padding 0
+	margin 0 50px 0 0
+	line-height 12px
+	vertical-align middle
+	display inline-block
+
+.footer-nav-item
+	float left
+	margin-right 20px
+
+	&:last-child
+		margin-right 0
+
+.footer-copyright
+	display inline-block
+
+.footer-decor-box
+	width 314px
+	height 70px
+	background url("../../images/footer-decor.png") 0px 0px no-repeat
+	position absolute
+	right 30px
+	top 0px
+/*FOOTER end*/
